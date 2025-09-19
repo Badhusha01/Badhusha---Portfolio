@@ -11,6 +11,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fixes for banner responsiveness */
+    .banner {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .banner h1,
+    .banner p {
+      line-height: 1.5;
+    }
+
+    .banner p {
+      text-transform: none; /* keep paragraph normal case */
+    }
+  </style>
 </head>
 
 <body>
@@ -25,39 +41,49 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Banner -->
-<section class="banner text-center text-uppercase py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8">
-        <h1 class="pb-3">HI! I am SYED IBRAHIM BADHUSHA</h1>
-        <h4 class="pb-3">
-          I am a JUNIOR WEB DEVELOPER with hands-on experience in FRONTEND DEVELOPMENT.
-          I have skills in JavaScript, HTML, CSS, Git, and Bootstrap | Leveling up in FULL-STACK DEVELOPMENT
-        </h4>
-        <a href="https://wa.me/+917639014820?text=Hi !!!" 
-           class="btn btn-dark btn-lg text-uppercase" target="_blank">
-          Connect with me
-        </a>
+  <section class="banner text-center py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h1 class="pb-3 text-uppercase">HI! I am SYED IBRAHIM BADHUSHA</h1>
+          <p class="pb-3 fs-5">
+            I am a <strong>Junior Web Developer</strong> with hands-on experience in
+            <strong>Frontend Development</strong>.
+            I have skills in <strong>JavaScript, HTML, CSS, Git, Bootstrap</strong> and I’m leveling up
+            in <strong>Full-Stack Development</strong>.
+          </p>
+          <a href="https://wa.me/+917639014820?text=Hi !!!"
+            class="btn btn-dark btn-lg text-uppercase mt-2" target="_blank">
+            Connect with me
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- About -->
   <section id="about" class="py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-md-6">
+        <div class="col-md-6">
           <h2 class="pb-3">About me</h2>
           <p class="pb-3">I am a final-year Engineering student passionate about Web development. I have developed strong
             skills in Frontend technologies and continue to explore new tools and frameworks to enhance my knowledge.
@@ -66,8 +92,8 @@
           <p class="pb-3">With a Positive attitude, Interest, Hard work, Dedication and Confidence, I am working
             towards becoming a Full-stack Developer and contributing to impactful projects.</p>
         </div>
-        <div class="col-12 col-md-6 text-center">
-          <img src="images/portfolio.jpg" class="img-fluid" alt="Portfolio">
+        <div class="col-md-6 text-center">
+          <img src="images/portfolio.jpg" class="img-fluid w-50" alt="Portfolio">
         </div>
       </div>
     </div>
@@ -77,38 +103,42 @@
   <section id="skills" class="bg-light pt-3">
     <div class="container">
       <div class="row">
-        <div class="col-12 pt-3">
+        <div class="col-md-12 pt-3">
           <h2 class="text-center pb-4">Skills</h2>
         </div>
       </div>
+
       <div class="row pb-5">
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img src="images/html.png" class="card-img-top img-fluid pt-4 m-auto" alt="HTML">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="card h-100">
+            <img src="images/html.png" class="card-img-top w-50 pt-4 m-auto" alt="HTML">
             <div class="card-body">
               <h5 class="card-title text-center">HTML</h5>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img src="images/css.png" class="card-img-top img-fluid pt-4 m-auto" alt="CSS">
+
+        <div class="col-6 col-md-3 mb-3">
+          <div class="card h-100">
+            <img src="images/css.png" class="card-img-top w-50 pt-4 m-auto" alt="CSS">
             <div class="card-body">
               <h5 class="card-title text-center">CSS</h5>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img src="images/js.png" class="card-img-top img-fluid pt-4 m-auto" alt="JavaScript">
+
+        <div class="col-6 col-md-3 mb-3">
+          <div class="card h-100">
+            <img src="images/js.png" class="card-img-top w-50 pt-4 m-auto" alt="JavaScript">
             <div class="card-body">
               <h5 class="card-title text-center">JavaScript</h5>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img src="images/bootstrap.png" class="card-img-top img-fluid pt-4 m-auto" alt="Bootstrap">
+
+        <div class="col-6 col-md-3 mb-3">
+          <div class="card h-100">
+            <img src="images/bootstrap.png" class="card-img-top w-50 pt-4 m-auto" alt="Bootstrap">
             <div class="card-body">
               <h5 class="card-title text-center">Bootstrap</h5>
             </div>
@@ -122,33 +152,39 @@
   <section id="contact">
     <div class="container-fluid bg-dark text-white pb-2">
       <div class="row">
-        <div class="col-12 pt-3">
+        <div class="col-md-12 pt-3">
           <h2 class="text-center pb-4 pt-3">Contact</h2>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-12 col-md-7">
+        <div class="col-md-7">
           <form>
             <div class="mb-3">
               <label for="nameinput" class="form-label">Name :</label>
               <input type="text" class="form-control" id="nameinput" name="nameinput"
                 pattern="[A-Za-z\s]+"
-                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, ''); if(this.value.length > 0){this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1).toLowerCase();}"
-                required>
+                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, ''); 
+                  if(this.value.length > 0){
+                    this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1).toLowerCase();
+                  }" required>
             </div>
+
             <div class="mb-3">
               <label for="mobileNumber" class="form-label">Mobile number :</label>
               <input type="number" class="form-control" id="mobileNumber" name="mobileNumber" min="0"
                 oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);" required>
             </div>
+
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address :</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
+
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+
             <div class="mb-3 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
@@ -160,8 +196,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
