@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  
 }
 
 /* Navbar */
@@ -146,4 +147,52 @@ body {
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Banner container styling */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  min-height: 100vh;     /* make banner take full screen height */
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* Banner text */
+.banner .container {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  max-width: 10000px;
+}
+
+/* Make sure background image covers properly */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/whiteslider2.jpg") no-repeat center center/cover;
+  z-index: 1;
+  opacity: 0.95; /* optional overlay */
+}
+
+.banner-text {
+  font-size: 3rem; /* Bigger text */
+  font-weight: 500; /* Bold */
+  text-align: center; /* Keep it centered */
+  letter-spacing: 2px; /* Wider spacing between letters */
+  line-height: 1.4; /* Improve readability */
+  color: #fff; /* Make sure it’s visible */
+  text-transform: uppercase; /* Optional: makes it all caps */
+}
+
+@media (max-width: 1500px) {
+  .banner-text {
+    font-size: 1.8rem; /* Smaller size on mobiles */
+    letter-spacing: 2px;
+  }
 }
